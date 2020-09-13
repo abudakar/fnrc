@@ -2,6 +2,8 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
+- nameOfRobot
+- userWhatAreYouDoing
 - greet
 - goodbye
 - out_of_scope
@@ -20,6 +22,9 @@ intents:
 - ai_R
 - ai_GS
 - greetingAnswer
+- userGreeting
+- askingCorona
+- areYouRobot
 responses:
   utter_greet:
   - text: اَهْلًا بِكُمْ فِي مَرْكَزِ الِابْتِكارِ انَا سِيدرَا  كَيْفَ حالُكَ ؟
@@ -83,6 +88,16 @@ responses:
   - text: 'هل يُمكِنُني أن أًساعِدَك بِشيئ اخر ؟ '
   utter_fallback:
   - text: 'أعتَذِرُ مِنْكَ لِازِلتُ أتَعَلم لأُجِيبك عَلى جَميعِ استفسراتكْ '
+  utter_userGreetingAnswer:
+  - text: الحمدلله دائما و ابدا
+  utter_whatAreYouDoing:
+  - text: صافية وافية
+  utter_corona:
+  - text: نحمد الله على كل شيء و باذن الله راح نتغلب علية .هل هناك اي اسالة اخرى؟
+  utter_areYouRobot:
+  - text: انا مساعد الالي ويمكنني مساعدتك بكل شيء
+  utter_nameOfRobot:
+  - text: اسمي عمران
 actions:
 - utter_fallback
 - utter_greet
@@ -103,4 +118,9 @@ actions:
 - utter_ai_GS
 - utter_askAboutAnyotherHelp
 - utter_greetingAnswer
+- utter_userGreetingAnswer
+- utter_whatAreYouDoing
+- utter_corona
+- utter_areYouRobot
+- utter_nameOfRobot
 - action_default_fallback

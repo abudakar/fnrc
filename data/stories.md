@@ -106,3 +106,29 @@
 * ai_GS
   - utter_ai_GS
   <!-- - utter_askAboutAnyotherHelp -->
+
+## user_chitchat
+* userGreeting
+  - utter_userGreetingAnswer
+  - utter_greetingAnswer
+
+## what_are_you_doing_story
+* userWhatAreYouDoing
+  - utter_whatAreYouDoing
+  - utter_greetingAnswer
+
+## corona_Story
+* askingCorona
+  - utter_corona
+
+## are_you_robot_Story
+* areYouRobot
+  - utter_areYouRobot
+
+## name_of_robot_Story
+* nameOfRobot
+  - utter_nameOfRobot
+
+## morning_Story
+ * goodMorning
+   - utter_greet
