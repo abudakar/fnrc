@@ -126,3 +126,27 @@
 ## morning_Story
  * goodMorning
    - utter_greet
+
+## fnrc-goals
+* FNRC_goals
+  - utter_FNRC_goals
+
+## FNRC-tasks
+ * FNRC_tasks
+   - utter_FNRC_tasks
+
+## Working_hours 
+ * Working_hours
+   - utter_Working_hours
+
+## FNRC
+ * FNRC
+   - utter_FNRC
+
+## cost
+ * cost
+   - utter_cost
+
+## Industry 
+ * industry 
+   - utter_industry
