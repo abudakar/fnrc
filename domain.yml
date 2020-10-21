@@ -2,6 +2,8 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
+- resturant
+- ME_specialization
 - nameOfRobot
 - userWhatAreYouDoing
 - greet
@@ -25,12 +27,22 @@ intents:
 - userGreeting
 - askingCorona
 - areYouRobot
+- goodMorning
+- salaryLetter
+- salaryLetterSide
+- salaryLetterPurpose
+- chatbotServices
+- printMilitaryId
+- confirm
+- deny
+- absencesBalance
+- finesQuery
+- finesQueryNumber
 responses:
   utter_greet:
-  - text: اَهْلًا بِكُمْ فِي مَرْكَزِ الِابْتِكارِ انَا سِيدرَا  كَيْفَ حالُكَ ؟
+  - text: بأفضل حال, وانتم؟
   utter_greetingAnswer:
-  - text: يُسْعِدُنِي لِقائِكَ ، يُمْكِنُني مُساعَدَتُكَ لِلتَّعَرُّفِ عَلَى اقِّسام
-      وَ مُبادَراتِ المَرْكَز . عَنْ أَيِّ قِسْمٍ تَسْأَلُ ؟
+  - text: يُسْعِدُنِي لِقائِكَ
   utter_goodbye:
   - text: اهلاً وسهلاً كان من دواعي سروري ان أخدمك
   utter_centerSections:
@@ -93,12 +105,41 @@ responses:
   utter_whatAreYouDoing:
   - text: صافية وافية
   utter_corona:
-  - text: نحمد الله على كل شيء و باذن الله راح نتغلب علية .هل هناك اي اسالة اخرى؟
+  - text: القادِمُ أفضلْ بِإِذْنِ اللَّه
   utter_areYouRobot:
   - text: انا مساعد الالي ويمكنني مساعدتك بكل شيء
   utter_nameOfRobot:
-  - text: اسمي عمران
+  - text: اسمي سيدرا
+  utter_salaryLetterPurpose:
+  - text: لأي غرض
+  utter_salaryLetterPrint:
+  - text: يرجى الانتظار سوف يتم طباعة الطلب
+  utter_printMilitaryId:
+  - text: يمكنني مساعدتك لعمل طلب بدل فاقد ، هل تريد الاستمرار؟
+  utter_confirm:
+  - text: تم تحويل الطلب للقسم المسؤول .
+  utter_finesQuery:
+  - text: وفقا للهوية يوجد مركبتين ، لوحة رقم ٦٤٢٢٣ و ٦٧٥٥٤ عن أي سيارة تسأل.
+  utter_finesQueryNumber:
+  - text: لديك مخالفة واحدة وهي عدم ارتداء حزام الامان
+  utter_salaryLetterSide:
+  - text: حسنا ، لأي جهة ؟
+  utter_resturant:
+  - text: حاضر حالا حجبلك المينيو
+  utter_mahi:
+  - text: اوك حساعدك بالموضوع
+  utter_ME_specialization:
+  - text: صيانة المنشئات والمرافق العامة
 actions:
+- utter_finesQueryNumber
+- utter_finesQuery
+- utter_absencesBalance
+- utter_confirm
+- utter_printMilitaryId
+- utter_chatbotServices
+- utter_salaryLetterPrint
+- utter_salaryLetterSide
+- utter_salaryLetterPurpose
 - utter_fallback
 - utter_greet
 - utter_goodbye

@@ -6,8 +6,6 @@
 ## greeting
 * greet
   - utter_greet
-* greetingAnswer
-  - utter_greetingAnswer
 
 ## byebye
 * goodbye
@@ -116,10 +114,6 @@
 * userWhatAreYouDoing
   - utter_whatAreYouDoing
   - utter_greetingAnswer
-
-## corona_Story
-* askingCorona
-  - utter_corona
 
 ## are_you_robot_Story
 * areYouRobot
